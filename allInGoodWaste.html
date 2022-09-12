@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <!--used to ensure website works on small and big devices -->
+        <title>Melanie Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+        <!-- makes website work on all browsers -->
+        <link rel="stylesheet"
+        herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">      
+        <script src="https://kit.fontawesome.com/32267ca896.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body> 
+        <header>
+            <div class="logo">
+                <img scr="img/Profile Pic.jpeg" alt="">
+            </div>
+            
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class = "hamburger"></span>
+            </button>  
+              
+            <nav class="nav">
+               <ul class="nav__list"> 
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Projects</a></li>
+               </ul>    
+            </nav> 
+        </header>
+        
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                 <strong>All In Good Waste</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Artificial Intelligence Garbage Sorter</p>
+            <img src="img/allInGoodWaste.jpg" alt="All in Good Waste Picture" class="intro__img">
+        </section> 
+        
+        <div class="portfolio-item-individual">
+            <p><strong>GOAL: </strong>With the rapidly worsening state of our climate, alarmingly only 9% of plastic is accurately sorted. I strived to create a machine that precisely and efficiently sorts through trash. With the help of a Raspberry Pi camera and machine learning, the machine distinguishes between trash, paper, plastic, glass, cardboard, metal and transport the garbage to its correct bin, disposing of it properly.</p>
+            <img src="img/allInGoodWaste2.jpg" alt="Artificial Intelligence Garbage Can">
+            <p><strong>IMPLEMENTATION: </strong>First, the camera takes a picture of the trash and using image processing as well as machine learning, it will identify the piece of trash. The display will show the output as well as the confidence level of the sorting. Along with that, the LED’s will light up to give another visual of what trash was identified as. Next, the NEMA17 motor will start moving to the location above its associated bin. The second motor will turn the cardboard, depositing the trash.</p>
+            <p><strong>CONTRIBUTION: </strong>Having experimented with Arduinos in the past, I installed WinSCP and VNV viewer to communicate with the Raspberry PI, setting it up to the Wi-Fi, and downloading the 2500 pics of recycling from Lobe.AI. I was able to increase the accuracy of the machine from 80% to 94% with the help of Kaggle photos. Troubleshooting with fragile wires and attaching all necessary components, I was able to have LED light's successfully light up when a piece of trash was identified. Lastly, it was necessary for the Raspberry Pi and motors to communicate efficiently, thus depositing the trash into the correct bin.</p>
+            <div style="padding-top: 30px;">
+                <center>
+                    <iframe style="border: 20px solid #16E0BD;border-radius: 20px;" width=75% height=400px src="https://youtu.be/Umn7bgk5G-8" allowfullscreen></iframe>
+                    <div style="padding-top: 20px"></div>    
+                </center>  
+            </div>
+            <p><strong>HARDWARE COMPONENTS: </strong>Raspberry Pi, SD Card, USB-C Power Supply, Camera Board, Driver Chip, Bridge, and Raspberry Pi Kit (included Breadboard, Pushbuttons, 220 Ohm resistors, and jumper wires)</p>            
+            <center><a href="https://github.com/mfoltak/All-In-Good-Waste/blob/main/All_In_Good_Waste.py">
+                    <button style="border-color: transparent;
+                    background-color: #16E0BD;
+                    color: black;
+                    border-radius: 10px; 
+                    padding: 10px 10px;
+                    cursor: pointer;
+                    width: 50%;
+                    height: 50px">CLICK TO CHECK THE CODE OUT</button>
+            </a></center>  
+        </div>
+        
+  
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:mfoltak@gmail.com" class="footer__link">mfoltak@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/melanie-foltak/">
+                         <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/mfoltak">
+                         <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link"                href="https://thefacesofwhitby.com/melanie-foltak/">
+                         <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </li>
+            </ul>
+       </footer> 
+         <script src="js/index.js"></script>
+    </body>   
+</html>

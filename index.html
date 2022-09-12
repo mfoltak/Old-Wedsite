@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <!--used to ensure website works on small and big devices -->
+        <title>Melanie Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+        <!-- makes website work on all browsers -->
+        <link rel="stylesheet"
+        herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/32267ca896.js" crossorigin="anonymous"></script>
+        </head>
+    
+    <body> 
+        <header>
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
+                <span class = "hamburger"></span>
+            </button>  -->
+              
+            <nav class="nav"> 
+               <ul class="nav__list"> 
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+               </ul>    
+            </nav> 
+        </header> 
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Melanie Foltak</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+            <img src="img/profile2.jpg" alt="Melanie Foltak Profile Picture" class="intro__img">
+        </section>    
+        
+        <!-- My Service -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">My Experience</h2>
+            <div class="services">
+                
+                <div class="service">
+                    <h3>Programmer - Toronto Transit Commission, End User Device Department
+                    </h3>
+                    <p>Completed the Software Development Life Cycle where I developped, optamized and tested code used to perform a Microsoft Software 20H2 Update in VB.NET across all staff computers. Aquired training with SQL databases. </p>
+                </div>  <!-- / service -->
+                
+                <div class="service">
+                    <h3>First Year Rep + Director of Publicity - Women In Computer Science Club</h3>
+                    <p> Organized and planned bi-weekly events creating a connection between first years and the committee to help student's upskill and prepare for careers in tech. Increase participation by 300% from previous semesters event.</p>
+                </div>  <!-- / service -->
+                
+                <div class="service">
+                    <h3>Engineering Outreach Counselor - University of Ontario Tech</h3>
+                    <p>Created and delivered programming and STEM based lessons utilizing Scratch and Microbit, while inceasing participation by 15%. I was promoted to mentor and approve daily operations of 2 employees.</p>
+                </div>  <!-- / service -->
+             </div> <!-- /services -->
+             
+             <a href="#work" class="btn">MY PROJECTS</a>
+        </section>
+        
+        
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">University Of Waterloo Student</p>
+        
+        <div class="about-me__body">
+            <p>Hi! I’m a University of Waterloo Software Engineer who is ready to make an impact.
+            </p>
+            <p>I believe in delivering creative and reliable solutions. I have experience coding in Java, C, C++, VB.NET and SQL. Most recently I was a Programmer for the Toronto Transit Commission where I coded and optimized programs that performed Microsoft Software Updates using VB.NET. Through my experience at the University of Ontario Tech Teaching Position, I designed and taught a number of games and various coding exercises to students.</p>
+            <p>Additionally, I have a passion for software development and trying to improve the world around me. My most recent project has been creating an Artificial Intelligence Garbage Sorter that correctly disposes of trash with 94% accuracy. When I am not expanding my technical skills, I am passionate about closing the gender gap in STEM and inspire others through my executive role in Waterloo’s Women in Computer Science Club (WiCS).</p>
+            <p>I have a passion for constantly learning and growing my list of various extra-curriculars. I am currently looking for a winter 2023 SWE internship opportunities.</p>
+            <p>In my free time, I enjoy scuba diving, ziplining, and any other adrenaline seeking opportunities.</p>       
+        </div>
+      
+      <img src="img/profile.jpg" alt="Melanie Smiling" class="about-me__img">     
+    </section>
+              
+    <!-- My Projects -->  
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Projects</h2>
+        <p class="section__subtitle section__subtitle--work">CLICK ON THE IMAGE TO LEARN MORE</p>
+        
+        <div class="portfolio">
+            <!-- Portfoloio img 01 -->
+            <a href="allInGoodWaste.html" class="portfolio__item">
+                <img src="img/allInGoodWaste.jpg" alt="All In Good Waste" width=100% height=100% style="overflow: hidden" class="portfolio__img">
+            </a>
+            
+            <!-- Portfoloio img 03 -->
+            <a href="girlsEmpowermentClub.html" class="portfolio__item">
+                <img src="img/gec3.jpg" alt="Girls Empowerment Club" width=100% height=100% style="overflow: hidden" class="portfolio__img">
+            </a>   
+        </div> 
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:mfoltak@gmail.com" class="footer__link">mfoltak@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/melanie-foltak/">
+                         <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/mfoltak">
+                         <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link"                href="https://thefacesofwhitby.com/melanie-foltak/">
+                         <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </li>
+            </ul>
+       </footer> 
+         <script src="js/index.js"></script>
+    </body>   
+</html>

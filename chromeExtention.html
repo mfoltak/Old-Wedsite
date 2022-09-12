@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <!--used to ensure website works on small and big devices -->
+        <title>Melanie Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+        <!-- makes website work on all browsers -->
+        <link rel="stylesheet"
+        herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">      
+        <script src="https://kit.fontawesome.com/32267ca896.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body> 
+        <header>
+            <div class="logo">
+                <img scr="img/Profile Pic.jpeg" alt="">
+            </div>
+            
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class = "hamburger"></span>
+            </button>  
+              
+            <nav class="nav">
+               <ul class="nav__list"> 
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Projects</a></li>
+               </ul>    
+            </nav> 
+        </header>
+        
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                 <strong>Chrome Extension</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Side Project</p>
+            <img src="img/extention.jpg" alt="Chrome Extention" class="intro__img">
+        </section> 
+        
+        <div class="portfolio-item-individual">
+            <p><strong>GOAL:</strong> Created a modern Chrome Extension with Manifest V3 and Pieces IDE application. The Chrome Extension acts as a YouTube bookmarker that allows you to bookmark a specific timestamp in any video and return to your desired timestamp.</p>
+            <p><strong>IMPLEMENTATION: </strong> </p>
+            <p><strong>CONTRIBUTION:</strong> Once you are brought to a YouTube page, if you click on the Chrome Extension Icon you will have the ability to add any number of desired timestamps with a title for each time. You also have the power to delete timestamps or will receive a message if no timestamps are present for the specific YouTube video. If you are not on a YouTube tab, the extension will let you know that it is unable to perform if you click on it.</p>           
+            <center><a href="https://github.com/mfoltak/All-In-Good-Waste/blob/main/All_In_Good_Waste.py">
+                    <button style="border-color: transparent;
+                    background-color: #16E0BD;
+                    color: black;
+                    border-radius: 10px; 
+                    padding: 10px 10px;
+                    cursor: pointer;
+                    width: 50%;
+                    height: 50px">CLICK TO CHECK THE CODE OUT</button>
+            </a></center>  
+        </div>
+         
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:mfoltak@gmail.com" class="footer__link">mfoltak@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/melanie-foltak/">
+                         <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/mfoltak">
+                         <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link"                href="https://thefacesofwhitby.com/melanie-foltak/">
+                         <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </li>
+            </ul>
+       </footer> 
+         <script src="js/index.js"></script>
+    </body>   
+</html>
